@@ -1,3 +1,41 @@
+@font-face {
+    font-family: 'Langdon';
+    src: url('../../fonts/Langdon_2.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'vincent';
+    src: url('../../fonts/Vincent-Regular.otf') format('opentype');
+}
 .landingpage{
     height:100dvh;
+    display:flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    justify-content: center;
+    font-family: 'Langdon';
 }
+
+.landing-bg{
+    position: absolute;
+    height:100%;
+    object-fit: cover;
+    object-position: center;
+    width:100%;
+    z-index:1
+}
+
+.header1{
+    font-size:clamp(35px, 10vw,80px);
+    text-align: center;
+    z-index:3;
+}
+
+.vincent{
+    font-family: 'Vincent';
+    font-size:clamp(15px, 6vw,50px);
+    z-index:3;
+}
+

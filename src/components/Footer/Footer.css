@@ -1,48 +1,80 @@
-footer{
-    padding:3rem 2rem;
-    background: rgb(0,0,0);
-    display:grid;
+.hr {
+  position: relative;
+  height: 13rem;
+  width: 2px;
+  background: #03c2cc;
+  border-radius: 5px;
+}
+@media (width>900px) {
+  .Footer-img {
+    max-height: 10rem;
+    height: auto;
+  }
+
+  footer {
+    padding: 3rem 2rem;
+    background: rgb(0, 0, 0);
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-content: center;
     position: relative;
-}
+  }
 
-.Footer-img{
-    height:10rem;
-}
-
-.hr{
-    position:relative;
-    height:13rem;
-    width:2px;
-    background: #03C2CC;
-    border-radius: 5px;
-}
-
-.middle-container{
-    padding:0 6rem;
-    color:white;
-    border-right:1px solid #03C2CC;
-    border-left:1px solid #03C2CC;
-    height:100%;
-    display:flex;
+  .middle-container {
+    padding: 0 6rem;
+    color: white;
+    border-right: 1px solid #03c2cc;
+    border-left: 1px solid #03c2cc;
+    height: 100%;
+    display: flex;
     align-items: center;
     text-align: center;
+  }
 }
 
-.last-container{
-    padding:3rem 1rem;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height:100%;
-}
+@media (width < 900px) {
+  .Footer-img {
+    max-width:20rem;
+    width:100%;
+    height:auto;
+  }
 
-.flex{
+  footer {
+    padding: 3rem 2rem;
+    background: rgb(0, 0, 0);
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .middle-container {
+    padding: 0 2rem;
+    color: white;
+    border-top: 1px solid #03c2cc;
+    border-bottom: 1px solid #03c2cc;
+    height: 100%;
     display: flex;
-    font-size: 2.5rem;
-    flex-wrap: wrap;
-    gap:0.5rem;
-    color:white;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.last-container {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.flex {
+  display: flex;
+  font-size: 2.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: white;
 }

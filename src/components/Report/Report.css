@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&display=swap");
+@font-face {
+  font-family: "RexBold";
+  src: url("../../fonts/Rex_Bold.ttf") format("truetype");
+}
+.second-container{
+display: flex;
+
+}
+.report-bg {
+  position: absolute;
+  height: 100%;
+  width:100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.report-container {
+  position: relative;
+  width:100%;
+  box-sizing: border-box;
+  /* height:80dvh; */
+  color:white;
+}
+
+button{
+    background:#02C1CB;
+    padding:0.7rem 4rem;
+    margin-top:2rem;
+    color:white;
+    font-weight:500;
+    cursor: pointer;
+    font-size:clamp(18px, 10vw,25px);
+    border-radius:1rem;
+    font-family: 'Dosis',serif;
+    border:2px solid white;
+    box-shadow: 4px 4px 10px rgba(255,255,255,0.7);
+}
+
+@media (width>900px) {
+  .report-content {
+    position: relative;
+    width:100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:1rem;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 6rem 3rem;
+  }
+  .rpt{
+    height: 100%;
+    border-radius:5px;
+    box-shadow:9px -6px 5px rgba(0, 0, 0, 0.63) 
+  }
+}
+
+@media (width<900px) {
+    .report-content {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap:3rem;
+      width:100%;
+      height: 100%;
+      box-sizing: border-box;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 6rem 3rem;
+    }
+  }
+
+  .rpt{
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.first-container{
+    display:flex;
+    flex-direction: column;
+    gap:1.5rem;
+    width:100%;
+    text-align: center;
+    align-items: center;
+}
+.report-header{
+    font-family: 'RexBold', sans-serif;
+    font-size:clamp(25px, 10vw,50px);
+    font-weight: bold;
+}
+
+.report-main{
+    font-family: 'Raleway';
+    text-align: center;
+    font-size:clamp(14px, 10vw,25px);
+}

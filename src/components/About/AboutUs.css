@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&family=Raleway&display=swap');
+
+.about-section{
+    padding:7rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+    background-color: #36cdd8a0;
+}
+
+@font-face {
+    font-family: 'RexBold';
+    src: url('../../fonts/Rex_Bold.ttf') format('truetype');
+}
+.about-header{
+    font-family: 'RexBold', sans-serif;
+    font-size:clamp(25px, 10vw,50px);
+    font-weight: bold;
+}
+
+.about-content{
+    font-family: 'Raleway';
+    text-align: center;
+    font-size:clamp(18px, 10vw,30px);
+}
+
+
+
+.first-container{
+    position:relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-box{
+    object-fit: cover;
+    height:100%;
+    object-position: center;
+}

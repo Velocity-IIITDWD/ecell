@@ -73,11 +73,22 @@ ol:hover:after {
     display:flex;
     z-index:10;
     position:absolute;
+    transition: transform 1s ease;
     top:0;
     left:0;
     width:100dvw;
     height:100dvh;
     background:rgba(0,0,0,0.7);
+    box-sizing: border-box;
     backdrop-filter: blur(6px);
+}
+
+.cross{
+  position:absolute;
+  right:2rem;
+  top:1rem;
+  color:white;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
