@@ -34,8 +34,3 @@
     align-items: center;
     justify-content: center;
 }
-.image-box{
-    object-fit: cover;
-    height:100%;
-    object-position: center;
-}

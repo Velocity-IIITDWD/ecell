@@ -81,3 +81,19 @@ button{
     text-align: center;
     font-size:clamp(14px, 10vw,25px);
 }
+
+@media(width>600px){
+.image-box{
+  object-fit: cover;
+  height:100%;
+  object-position: center;
+}}
+
+@media(width<600px){
+  .image-box{
+    object-fit: cover;
+    height:10rem;
+    object-position: center;
+  }}
+  
+
