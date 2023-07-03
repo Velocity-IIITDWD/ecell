@@ -4,6 +4,8 @@ import Gallery from "../components/Gallery/Gallery"
 import LandingPage from "../components/LandingPage/LandingPage"
 import Navbar from "../components/Navbar/Navbar"
 import Report from "../components/Report/Report"
+import StartUps from "../components/Startup/StartUps"
+import Team from "../components/Team/Team"
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
         <AboutUs/>
         <Gallery/>
         <Report/>
+        <Team/>
+        <StartUps/>
         <Footer/>
     </main>
   )

@@ -1,0 +1,121 @@
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.TeamDetails {
+  text-align: center;
+  /* width: 98.9vw; */
+  /* margin: 10rem auto; */
+  background-color: black;
+  /* height: 570px; */
+  padding: 2rem 0rem;
+}
+
+.slide img{
+/* width:8rem;
+height: 8rem; */
+margin: 0 auto;
+border-radius:100%;
+
+}
+
+.slide{
+    transform: scale(0.6);
+    transition: transform 300ms;
+    opacity: 0.5;
+}
+
+.activeSlide{
+  transform: scale(1);
+  opacity: 1;
+}
+
+.arrow{
+    /* background-color: #fff; */
+    position: absolute;
+    cursor: pointer;
+    z-index: 4;
+    width: 22px;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    padding: 8px;
+    border-radius: 100%;
+    height: 22px;
+}
+
+.arrow svg{
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #02C1CB;
+}
+
+.next {
+  right: 36%;
+  top: 32%;
+  margin: 0px 16px;
+}
+
+.prev {
+  left: 36%;
+  top: 32%;
+  margin: 0px 16px;
+}
+
+.imgSize{
+    background-color: black;
+    width: 12rem;
+    height: 12rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius:100%;
+}
+.info{
+  margin: 12px 0px;
+}
+
+.activeSlide .info p{
+    color: #fff;
+    margin: 0;
+}
+.info p{
+  margin: 0;
+}
+.name{
+    font-weight: 600;
+    font-size: 24px;
+}
+.info p span{
+    font-weight: 600;
+}
+.our-tem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.team-btn{
+    background-color: #02C1CB;
+    width: fit-content;
+    color: #ffff;
+    padding: 8px;
+    font-weight: 500;
+    border-radius: 16px;
+    border: 2px solid #fff;
+}
+
+@media only screen and (max-width:670px){
+  .next {
+    right: 2%;
+  }
+  
+  .prev {
+  left: 2%;
+  }
+}
