@@ -18,6 +18,11 @@ img {
   position: relative;
 }
 
+.links{
+  text-decoration: none;
+  color:white;
+}
+
 @media only screen and (min-width: 900px) {
   ul {
     display: flex;
