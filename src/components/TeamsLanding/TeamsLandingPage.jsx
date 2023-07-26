@@ -4,7 +4,7 @@ function TeamsLandingPage() {
 
   return (
     <div className='containerStyle'>
-      <div class='imageStyle' style={{ backgroundImage: `url('./unsplash_g1Kr4Ozfoac.png')` }}>
+      <div className='imageStyle' style={{ backgroundImage: `url('./unsplash_g1Kr4Ozfoac.png')` }}>
         <div className='description-container'>
         A little description or about the team
         </div>

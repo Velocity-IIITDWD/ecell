@@ -7,6 +7,9 @@
     width:100%;
     padding:1rem 2rem;
     box-sizing: border-box;
+    /* overflow-x: auto;
+    overflow-y: hidden; */
+
 }
 
 .hr{
@@ -26,9 +29,13 @@
 }
 
 .teams-list-scroll{
-    width:100%;
+    width:98%;
     overflow-x: auto;
     padding:1rem;
     display: flex;
-    gap:2rem;
+    gap:3rem;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    margin: 1.5rem 0rem;
 }
